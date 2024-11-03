@@ -7,6 +7,11 @@ git clone https://github.com/ylasgamers/getgrass.git
 ```
 cd getgrass
 ```
+- Please Choose :
+Lite Version With Proxy = localgrasslite.py
+Lite Version Without Proxy = localgrasslite_noproxy.py
+Node Version With Proxy = localgrassnode.py
+Node Version Without Proxy = localgrassnode_noproxy.py
 ```
 python localgrasslite.py
 python localgrassnode.py
