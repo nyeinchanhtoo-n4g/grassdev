@@ -8,10 +8,9 @@ import websockets
 from loguru import logger
 from fake_useragent import UserAgent
 
-user_agent = UserAgent(os='windows', platforms='pc', browsers='chrome')
-random_user_agent = user_agent.random
-
 async def connect_to_wss(user_id):
+    user_agent = UserAgent(os='windows', platforms='pc', browsers='chrome')
+    random_user_agent = user_agent.random
     device_id = str(uuid.uuid4())
     logger.info(device_id)
     while True:
