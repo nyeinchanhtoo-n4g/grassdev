@@ -11,7 +11,7 @@ from websockets_proxy import Proxy, proxy_connect
 from fake_useragent import UserAgent
 
 async def connect_to_wss(socks5_proxy, user_id):
-    user_agent = UserAgent(os='windows', platforms='pc', browsers='chrome')
+    user_agent = UserAgent(os='windows', browsers='chrome')
     random_user_agent = user_agent.random
     device_id = str(uuid.uuid3(uuid.NAMESPACE_DNS, socks5_proxy))
     logger.info(device_id)
