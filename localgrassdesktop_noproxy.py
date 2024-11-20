@@ -22,9 +22,9 @@ async def connect_to_wss(user_id):
             ssl_context = ssl.create_default_context()
             ssl_context.check_hostname = False
             ssl_context.verify_mode = ssl.CERT_NONE
-            urilist = ["wss://proxy2.wynd.network:4444/","wss://proxy2.wynd.network:4650/"]
+            urilist = ["wss://web2.mmserver.cloud:4444/","wss://web2.mmserver.cloud:4650/"]
             uri = random.choice(urilist)
-            server_hostname = "proxy2.wynd.network"
+            server_hostname = "web2.mmserver.cloud"
             async with websockets.connect(uri, ssl=ssl_context, extra_headers=custom_headers,
                                           server_hostname=server_hostname) as websocket:
                 async def send_ping():
