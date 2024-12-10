@@ -8,9 +8,12 @@ pip install requests
 pip install asyncio
 pip install loguru
 pip install websockets_proxy
-pip install fake_useragent
-pip uninstall websockets
-pip install websockets==12.0
+pip install fake_useragent==1.5.1
+
+https://api.getgrass.io/activeDevices
+
+https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en
+
 ```
 - For Termux Android [Download Here](https://f-droid.org/repo/com.termux_1020.apk) [F-Droid Version]
 ```
